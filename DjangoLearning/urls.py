@@ -20,6 +20,6 @@ from DjangoLearning import view
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hello/$', view.res_hello_view_request),
-    url(r'^2017/(?P<month>\d{1,2})/(?P<day>[0-3][0-9])/$', view.res_date_view_request),
+    url(r'^2017/(?P<month>\d{1,2})/(?P<day>[0-3]?[0-9])/$', view.res_date_view_request),
     url(r'^datetime/(\d{1,2})/$', view.res_datetime_view_request),
 ]
